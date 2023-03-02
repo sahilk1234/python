@@ -27,7 +27,7 @@ SECRET_KEY = 'ghi9u1(d%$8a!*v%-cx2gxig9gl&(74nom9&vp&xwdf7kqp47u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -126,8 +126,12 @@ STATIC_URL = '/static/'
 TWILIO_ACCOUNT_SID = f'{env("TWILIO_ACCOUNT_SID")}'
 TWILIO_AUTH_TOKEN = f'{env("TWILIO_AUTH_TOKEN")}'
 TWILIO_NUMBER = f'{env("TWILIO_NUMBER")}'
-SMS_BROADCAST_TO_NUMBERS = [
+CONTACTS_NUMBERS = [
     "+918551902607",  # use the format +19735551234
+]
+
+POLICE_NUMBERS = [
+    "+918180929614",  # use the format +19735551234
 ]
 
 STATICFILES_DIRS = [
